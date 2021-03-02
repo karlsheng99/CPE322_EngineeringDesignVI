@@ -16,7 +16,6 @@ except:
         ans = input("Add it to the database?(y/n) ")
         if ans == "y": break
         elif ans == "n": quit()
-    #region = input("Enter the region: ")
     timezone = input("Enter the timezone: ")
     geolocator = Nominatim(user_agent="iot-application")
     location = geolocator.geocode(city_name, language="en")
